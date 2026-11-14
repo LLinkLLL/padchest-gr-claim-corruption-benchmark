@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use this research artifact, please cite it and the upstream PadChest-GR dataset.
+title: PadChest-GR Claim Corruption Benchmark
+type: software
+authors:
+  - family-names: Li
+    given-names: Qianyu
+repository-code: https://github.com/LLinkLLL/padchest-gr-claim-corruption-benchmark
+version: 2.0.0
+date-released: 2026-11-14
+keywords:
+  - medical phrase grounding
+  - chest radiographs
+  - controlled claim corruption
+  - paired evaluation

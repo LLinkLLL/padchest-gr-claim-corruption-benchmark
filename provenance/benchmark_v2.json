@@ -1,0 +1,69 @@
+{
+  "benchmark_name": "PadChest-GR controlled claim corruption benchmark",
+  "benchmark_version": "v2",
+  "split": "test",
+  "seed": 42,
+  "source_reports_sha256": "efa16513850dc10f87073debb9c4b3ae1d0a1ae611f01b5705e808179854b14b",
+  "source_metadata_sha256": "d61d5fcce9e773e54a9e73b24d0be685ffd15685aef9533a03200b3d9d7caee4",
+  "manifest_sha256": "eb991c2cb7ba7a62caf4157e2c7ca51f4c2ff2e1bc4a2248877e5abc024a9826",
+  "pair_counts": {
+    "finding_substitution_proxy": 100,
+    "laterality": 245,
+    "polarity": 98,
+    "vertical": 67
+  },
+  "direction_pair_counts": {
+    "finding_substitution_proxy:finding_to_finding": 100,
+    "laterality:left_to_right": 95,
+    "laterality:right_to_left": 150,
+    "polarity:negative_to_positive": 49,
+    "polarity:positive_to_negative": 49,
+    "vertical:lower_to_upper": 36,
+    "vertical:upper_to_lower": 31
+  },
+  "benchmark_group_pair_counts": {
+    "main_benchmark": 410,
+    "proxy_lower_confidence": 100
+  },
+  "pair_total": 510,
+  "row_total": 1020,
+  "unique_patients": 298,
+  "unique_studies": 301,
+  "unique_images": 301,
+  "multi_box_pairs": 32,
+  "training_vocabulary_size": 147,
+  "exclusion_counts": {
+    "laterality_bbox_mismatch": 19,
+    "laterality_explicit_v2_exclusion": 1,
+    "laterality_non_atomic_location": 1,
+    "laterality_opposite_context": 1,
+    "laterality_structured_location_mismatch": 9,
+    "polarity_negation_scope_mismatch": 1,
+    "polarity_positive_context": 1,
+    "vertical_bbox_mismatch": 16,
+    "vertical_explicit_v2_exclusion": 2,
+    "vertical_structured_location_mismatch": 1
+  },
+  "finding_substitution_replacement_counts": {
+    "aortic elongation": 9,
+    "atelectasis": 9,
+    "calcified granuloma": 9,
+    "cardiomegaly": 9,
+    "costophrenic angle blunting": 8,
+    "infiltrates": 8,
+    "interstitial pattern": 8,
+    "nodule": 8,
+    "pacemaker": 8,
+    "pleural effusion": 8,
+    "pneumothorax": 8,
+    "scoliosis": 8
+  },
+  "label_normalization": {
+    "apical pleural thickening": "pleural thickening",
+    "atelectasis basal": "atelectasis"
+  },
+  "note": "Laterality, vertical, and bidirectional polarity form the 410-pair main benchmark. Finding substitution is a 100-pair core proxy/lower-confidence subset and is not pooled into one overall score.",
+  "dataset": "PadChest-GR",
+  "checkpoint_epoch_pgfc": 22,
+  "checkpoint_sha256_pgfc": "18b6b8ddc5e783a2c875d4eb63a60086f95532b39c9277db1c8db9d31fa08c76"
+}

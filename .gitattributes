@@ -1,0 +1,5 @@
+* text=auto eol=lf
+evidence/*.csv -text
+results/*.csv -text
+provenance/benchmark_v2.json -text
+*.png binary

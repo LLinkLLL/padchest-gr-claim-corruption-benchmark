@@ -1,0 +1,61 @@
+{
+  "benchmark_name": "PadChest-GR controlled claim corruption benchmark",
+  "benchmark_version": "v2",
+  "split": "test",
+  "seed": 42,
+  "max_finding_substitution_pairs": 100,
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 2026,
+  "side_boundary": 0.5,
+  "vertical_boundary": 0.5,
+  "benchmark_groups": {
+    "laterality": "main_benchmark",
+    "vertical": "main_benchmark",
+    "polarity": "main_benchmark",
+    "finding_substitution_proxy": "proxy_lower_confidence"
+  },
+  "expected_pair_counts": {
+    "laterality": 245,
+    "vertical": 67,
+    "polarity": 98,
+    "finding_substitution_proxy": 100
+  },
+  "expected_direction_counts": {
+    "laterality": {
+      "right_to_left": 150,
+      "left_to_right": 95
+    },
+    "vertical": {
+      "upper_to_lower": 31,
+      "lower_to_upper": 36
+    },
+    "polarity": {
+      "negative_to_positive": 49,
+      "positive_to_negative": 49
+    },
+    "finding_substitution_proxy": {
+      "finding_to_finding": 100
+    }
+  },
+  "expected_group_pair_counts": {
+    "main_benchmark": 410,
+    "proxy_lower_confidence": 100
+  },
+  "polarity_category_quota_per_direction": {
+    "infiltrates": 24,
+    "consolidation": 4,
+    "pleural effusion": 11,
+    "nodule": 7,
+    "pneumothorax": 3
+  },
+  "paths": {
+    "reports": "data/grounded_reports_20240819.json",
+    "metadata": "data/master_table.csv",
+    "image_root": "data/PadChest_GR",
+    "manifest": "local/manifest/claim_pairs.csv",
+    "construction_summary": "local/manifest/construction_summary.json",
+    "manifest_hash": "local/manifest/manifest_sha256.txt",
+    "validation_summary": "local/manifest/validation_summary.json",
+    "results": "local/results"
+  }
+}

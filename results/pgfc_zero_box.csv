@@ -1,0 +1,15 @@
+corruption_type,corruption_direction,variant,benchmark_group,n,patients,threshold,native_no_box_rate,native_no_box_n,native_no_box_ci_low,native_no_box_ci_high,derived_no_box_rate,derived_no_box_n,derived_no_box_ci_low,derived_no_box_ci_high,expected_no_box_under_training_policy,box_decision_matches_training_policy_rate,box_decision_matches_training_policy_n,box_decision_matches_training_policy_ci_low,box_decision_matches_training_policy_ci_high,E_decision_correct_rate,E_decision_correct_n,E_decision_correct_ci_low,E_decision_correct_ci_high,box_and_E_correct_rate,box_and_E_correct_n,box_and_E_correct_ci_low,box_and_E_correct_ci_high
+finding_substitution_proxy,finding_to_finding,corrupted,proxy_lower_confidence,100,100,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
+finding_substitution_proxy,finding_to_finding,source,proxy_lower_confidence,100,100,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
+laterality,left_to_right,corrupted,main_benchmark,95,88,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
+laterality,left_to_right,source,main_benchmark,95,88,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
+laterality,right_to_left,corrupted,main_benchmark,150,124,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
+laterality,right_to_left,source,main_benchmark,150,124,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
+polarity,negative_to_positive,corrupted,main_benchmark,49,47,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,True,0.000000,0,0.000000,0.000000,0.673469,33,0.541667,0.804036,0.000000,0,0.000000,0.000000
+polarity,negative_to_positive,source,main_benchmark,49,47,0.21630859375,0.000000,0,0.000000,0.000000,1.000000,49,1.000000,1.000000,True,1.000000,49,1.000000,1.000000,0.918367,45,0.836735,0.980392,0.918367,45,0.833245,0.980000
+polarity,positive_to_negative,corrupted,main_benchmark,49,43,0.21630859375,0.000000,0,0.000000,0.000000,1.000000,49,1.000000,1.000000,True,1.000000,49,1.000000,1.000000,0.224490,11,0.104167,0.358528,0.224490,11,0.100000,0.365385
+polarity,positive_to_negative,source,main_benchmark,49,43,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,False,1.000000,49,1.000000,1.000000,0.489796,24,0.326087,0.640000,0.489796,24,0.339833,0.640038
+vertical,lower_to_upper,corrupted,main_benchmark,36,35,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
+vertical,lower_to_upper,source,main_benchmark,36,35,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
+vertical,upper_to_lower,corrupted,main_benchmark,31,27,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
+vertical,upper_to_lower,source,main_benchmark,31,27,0.21630859375,0.000000,0,0.000000,0.000000,0.000000,0,0.000000,0.000000,,,,,,,,,,,,,
